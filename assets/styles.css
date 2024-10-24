@@ -1,0 +1,206 @@
+/* Styles de base */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 40px;
+  min-height: 100vh;
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Style pour les boutons */
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+  margin: 10px auto;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Conteneur pour le formulaire */
+#attendeeForm {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#attendeeContainer {
+  margin-bottom: 20px;
+}
+
+.attendee {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.attendee input {
+  padding: 10px;
+  width: 65%;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.attendee input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.attendee button {
+  background-color: #e74c3c;
+  padding: 10px 15px;
+  border-radius: 25px;
+}
+
+.attendee button:hover {
+  background-color: #c0392b;
+}
+
+.attendee button:active {
+  transform: translateY(0);
+}
+
+/* Styles pour la section résultats */
+.result-section {
+  text-align: center;
+  margin-top: 30px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.result-section h3 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+.result-section .result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#totalCost {
+  background-color: #27ae60;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#timePassed {
+  background-color: #2980b9;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.result-section .result:hover {
+  transform: scale(1.05);
+}
+
+.result-section .icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Transition douce pour les résultats */
+input, button, .result-section {
+  transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  #attendeeForm {
+    padding: 20px;
+  }
+
+  .attendee input {
+    width: 70%;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .attendee {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .attendee input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .result-section {
+    padding: 20px;
+  }
+
+  .result-section .result {
+    font-size: 1.5rem;
+  }
+}

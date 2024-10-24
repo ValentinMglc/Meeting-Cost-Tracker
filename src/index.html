@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Meeting Cost Tracker</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <h2>Meeting Cost Tracker</h2>
+    <form id="attendeeForm">
+      <div id="attendeeContainer"></div>
+      <button type="button" onclick="addAttendee()">Add Attendee</button><br /><br />
+    </form>
+    <button onclick="startTimer()">Start Timer</button>
+    <button onclick="stopTimer()">Stop Timer</button><br /><br />
+    Total Cost: €<span id="totalCost">0.00</span><br /><br />
+    Time Passed: <span id="timePassed">00:00:00</span>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
